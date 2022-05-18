@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "twitter-bootstrap@4.6.0",
+      "destination": "lib/bootstrap/"
+    },
+    {
+      "library": "jquery@3.6.0",
+      "destination": "lib/jquery/"
+    },
+    {
+      "library": "Chart.js@3.4.1",
+      "destination": "lib/Chart.js/"
+    },
+    {
+      "library": "limonte-sweetalert2@11.0.17",
+      "destination": "lib/sweetalert2/"
+    },
+    {
+      "library": "font-awesome@5.15.3",
+      "destination": "lib/font-awesome/"
+    },
+    {
+      "library": "moment.js@2.29.1",
+      "destination": "lib/moment.js/"
+    },
+    {
+      "library": "chartjs-plugin-annotation@1.0.2",
+      "destination": "lib/chartjs-plugin-annotation/"
+    },
+    {
+      "library": "chartjs-plugin-colorschemes@0.4.0",
+      "destination": "lib/chartjs-plugin-colorschemes/"
+    },
+    {
+      "library": "chartjs-plugin-zoom@1.1.1",
+      "destination": "lib/chartjs-plugin-zoom/"
+    },
+    {
+      "library": "chartjs-plugin-datalabels@2.0.0",
+      "destination": "lib/chartjs-plugin-datalabels/"
+    },
+    {
+      "library": "datatables@1.10.21",
+      "destination": "lib/datatables/"
+    }
+  ]
+}

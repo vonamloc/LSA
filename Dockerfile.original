@@ -1,0 +1,9 @@
+FROM cirrusci/windowsservercore:visualstudio2019-2021.12.07
+  SHELL ["powershell"] 
+  RUN Remove-Website -Name 'LSA'; \ 
+  New-Item -Path 'D:\LSA_FYPJ2021P4_SourceCodes\LSA' -Type Directory; \ 
+  New-Website -Name 'web-app' -PhysicalPath 'D:\LSA_FYPJ2021P4_SourceCodes\LSA' -Port 80 -Force 
+  EXPOSE 80 
+  RUN Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters' \ 
+  -Name ServerPriorityTimeLimit -Value 0 -Type DWord 
+  
